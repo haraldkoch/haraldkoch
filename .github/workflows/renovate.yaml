@@ -20,8 +20,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
   cancel-in-progress: true
 
-env:
-
 jobs:
   renovate:
     name: Renovate
