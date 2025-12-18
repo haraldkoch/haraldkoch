@@ -13,8 +13,8 @@ on:
         description: Log Level
         default: "debug"
         required: false
-  schedule:
-    - cron: "0 * * * *"
+  # schedule:
+  #   - cron: "0 * * * *"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.number || github.ref }}
